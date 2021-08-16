@@ -1,0 +1,117 @@
+.Register-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 90%;
+    margin-top: 15px;
+    box-shadow: inset 15px 15px 5px 0 rgb(255 255 255 / 0.05); 
+    border-radius: 40px;
+    position: relative;
+    background-color: rgba(255, 255, 255, .2);
+    z-index: 1;  
+    border: none;
+    backdrop-filter: blur(15px);
+}
+.Register-Header{
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: normal;
+    align-self: center;
+    justify-self: center;
+}
+.Register-Form-Container{
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;   
+}
+.Register-Button{
+    background-color: #DBC284;
+    width: 60%;
+    height: 20%;
+    box-shadow: 10px 10px 6px rgb(0 0 0 / 0.2);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: none;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50px;
+    color: #9B4A85;
+    font-weight: bold;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+.Register-Button:hover{
+    background-color: #d3bc81
+}
+
+.Register-Button:active {
+    background-color: #d3bc81;
+    transform: translateY(4px);
+}
+.Register-Input{
+    width: 80%;
+    height: 50%;
+    box-shadow: 10px 10px 6px rgb(0 0 0 / 0.2);
+    align-items: center;
+    border: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 50px;
+    color: #9B4A85;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.Register-Input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+.Register-Input::placeholder{
+    color: #9B4A85;
+    opacity: 0.5;
+}
+.Register-Input-Container{
+    height: auto;
+    width:100%;
+    margin-bottom:5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, .6);
+}
+.Register-Label-Input-Container{
+    flex-direction: column;
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-left:10px ;
+    margin-right:10px;
+}
+.Register-Label{
+    color: #9B4A85;
+    font-weight: bold;
+}
+.Register-Textarea{
+    width: 100%;
+    height: 50%;
+    box-shadow: 10px 10px 6px rgb(0 0 0 / 0.2);
+    align-items: center;
+    border: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #9B4A85;
+    font-weight: bold;
+    font-size: 1rem;
+    resize:vertical;
+}
+.Register-Textarea::placeholder{
+    color: #9B4A85;
+    opacity: 0.5;
+}

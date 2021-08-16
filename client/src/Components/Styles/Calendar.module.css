@@ -1,0 +1,8 @@
+.Calendar-Container{
+    height: 80%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 10px 6px rgb(0 0 0 / 0.2);
+    border-radius: 40px;
+    margin-top: 15px;
+}

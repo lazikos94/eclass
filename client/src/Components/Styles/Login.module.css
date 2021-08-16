@@ -1,0 +1,75 @@
+.Login-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    box-shadow: inset 15px 15px 5px 0 rgb(255 255 255 / 0.05); 
+    border-radius: 40px;
+    position: relative;
+    background-color: rgba(255, 255, 255, .2);
+    z-index: 1;
+    overflow: hidden;
+    border: none;
+    backdrop-filter: blur(15px);
+}
+.Login-Header{
+    height: 30%;
+    color: white;
+    text-align: center;
+    font-size: 3.2vw;
+    padding-top: 5%;
+    font-weight: normal;
+}
+.Login-Form-Container{
+    height: 70%;
+    width: 70%;
+}
+.Login-Button{
+    background-color: #DBC284;
+    width: 100%;
+    height: 20%;
+    box-shadow: 10px 10px 6px rgb(0 0 0 / 0.2);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: none;
+    border-radius: 50px;
+    color: #9B4A85;
+    font-weight: bold;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+.Login-Button:hover{
+    background-color: #d3bc81
+}
+
+.Login-Button:active {
+  background-color: #d3bc81;
+  transform: translateY(4px);
+}
+.Login-Input{
+    width: 95%;
+    height: 20%;
+    box-shadow: 10px 10px 6px rgb(0 0 0 / 0.2);
+    align-items: center;
+    border: none;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 50px;
+    color: #9B4A85;
+    font-weight: bold;
+    font-size: 1.5vw;
+    padding-left: 5%;
+}
+.Login-Input:focus {
+    outline: none;
+    box-shadow: none;
+}
+.Login-Input::placeholder{
+    color: #9B4A85;
+    font-weight: bold;
+    font-size: 1.5vw;
+
+}
