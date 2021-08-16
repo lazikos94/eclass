@@ -11,7 +11,7 @@ async function CreateClass(req,res){
         if(body){
             const newClass = new Class({
                 name:body.name,
-                teachers:body.teacher,
+                teachers:body.teachers,
                 students:body.students
             });
             await newClass.save();

@@ -7,14 +7,12 @@ const User = require('../../../Database/Models/User/User');
 async function CheckToken(req,res){
     try{
         const encrypted_token = req.header("Authentication");
-        console.log(encrypted_token)
         if (!encrypted_token) return res.json(false);
         
         const decrypted_jwtToken = CryptoJS.AES.decrypt(encrypted_token,crypto_secret).toString(CryptoJS.enc.Utf8)
         const verified = jwt.verify(decrypted_jwtToken, secret);
         
         const user = await User.findOne({'_id': verified.sub.user}, { password: 0 }).populate("role",{"name":1,"roleType":1,"_id":0});
-        console.log(user)
         if(!user) return res.json(false);
        
         if (!verified) return res.json(false);
